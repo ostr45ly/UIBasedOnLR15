@@ -43,7 +43,7 @@ public class ListenerTest implements ITestListener {
     public void onTestFailure(ITestResult iTestResult) {
         logger.error("TEST: " + iTestResult.getName() + " FAILED");
         logger.error(iTestResult.getThrowable().fillInStackTrace());
-    }
+}
 
     public void onTestSkipped(ITestResult iTestResult) {
         logger.info("TEST: " + iTestResult.getName() + " SKIPPED");

@@ -12,7 +12,7 @@ public class BasePage {
 
     protected String baseURL = "http://soft.it-hillel.com.ua:8080";
     protected WebDriver driver;
-    private int timeOutInSeconds = 10;
+    private int timeOutInSeconds = 20;
     public static String defaultImplicitWaitInSeconds = "10";
 
     protected BasePage() {

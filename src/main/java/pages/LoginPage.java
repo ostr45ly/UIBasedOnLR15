@@ -27,14 +27,14 @@ public class LoginPage extends BasePage {
 
     public LoginPage enterUsername() {
 
-        waitToBePresentAndSendKeys(usernameLocator, "gubernatorova.sn");
+        waitToBePresentAndSendKeys(usernameLocator, "ostr45");
 
         return this;
     }
 
     public LoginPage enterPassword() {
 
-        waitToBePresentAndSendKeys(passwordLocator, "11111111");
+        waitToBePresentAndSendKeys(passwordLocator, "ostr45");
 
         return this;
     }

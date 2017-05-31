@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="14273" started-at="2017-05-29T09:28:42Z" finished-at="2017-05-29T09:28:56Z">
+    <groups>
+      <group name="functional">
+        <method signature="SimpleTest.subTaskCRUD()[pri:0, instance:SimpleTest@4678c730]" name="subTaskCRUD" class="SimpleTest"/>
+        <method signature="SimpleTest.subTaskCommentCRUD()[pri:0, instance:SimpleTest@4678c730]" name="subTaskCommentCRUD" class="SimpleTest"/>
+      </group> <!-- functional -->
+    </groups>
+    <test name="Test1" duration-ms="14273" started-at="2017-05-29T09:28:42Z" finished-at="2017-05-29T09:28:56Z">
+      <class name="SimpleTest">
+        <test-method status="FAIL" signature="subTaskCRUD()[pri:0, instance:SimpleTest@4678c730]" name="subTaskCRUD" duration-ms="8574" started-at="2017-05-29T12:28:42Z" finished-at="2017-05-29T12:28:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at utils.ListenerTest.onTestFailure(ListenerTest.java:45)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1716)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1699)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subTaskCRUD -->
+        <test-method status="PASS" signature="subTaskCommentCRUD()[pri:0, instance:SimpleTest@4678c730]" name="subTaskCommentCRUD" duration-ms="5683" started-at="2017-05-29T12:28:51Z" finished-at="2017-05-29T12:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subTaskCommentCRUD -->
+      </class> <!-- SimpleTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>
